@@ -1,5 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        Vehiculo Mi_Automovil = new Automovil("TOYOTA", "ROJO",200.00);
+
+        Mi_Automovil.mostrarInfo();
+        Mi_Automovil.mostrarVehiculo();
     }
 }
