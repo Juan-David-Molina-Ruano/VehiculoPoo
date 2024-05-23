@@ -28,6 +28,14 @@ public class App {
             Mi_Automovil.mostrarInfo();
             Mi_Automovil.mostrarVehiculo();
         }
+
+        else if(Opcion==3)
+        {
+            Vehiculo Mi_Automovil = new Barco("Titanic", "Blanco",500.00);
+
+            Mi_Automovil.mostrarInfo();
+            Mi_Automovil.mostrarVehiculo();
+        }
         else
         {
             System.out.println("Opcion No Valida");
