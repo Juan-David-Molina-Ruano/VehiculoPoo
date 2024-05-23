@@ -7,7 +7,7 @@ public class App {
 
         int Opcion=0;
 
-        Vehiculo Mi_Automovil_1 = new Automovil();
+        Vehiculo Mi_Vehiculo = new Automovil();
 
         System.out.println("   ¿Que Vehiculo Desea Ver?:");
         System.out.println("1.Automovil   2.Avion   3.Barco");
@@ -16,25 +16,25 @@ public class App {
 
         if(Opcion==1)
         {
-            Vehiculo Mi_Automovil = new Automovil("TOYOTA", "ROJO",200.00);
+            Mi_Vehiculo = new Automovil("TOYOTA", "ROJO",200.00);
 
-            Mi_Automovil.mostrarInfo();
-            Mi_Automovil.mostrarVehiculo();
+            Mi_Vehiculo.mostrarInfo();
+            Mi_Vehiculo.mostrarVehiculo();
         }
         else if(Opcion==2)
         {
-            Vehiculo Mi_Automovil = new Avion("FERRARI", "NEGRO",400.00);
+            Mi_Vehiculo = new Avion("FERRARI", "NEGRO",400.00);
 
-            Mi_Automovil.mostrarInfo();
-            Mi_Automovil.mostrarVehiculo();
+            Mi_Vehiculo.mostrarInfo();
+            Mi_Vehiculo.mostrarVehiculo();
         }
 
         else if(Opcion==3)
         {
-            Vehiculo Mi_Automovil = new Barco("Titanic", "Blanco",500.00);
+            Mi_Vehiculo = new Barco("Titanic", "Blanco",500.00);
 
-            Mi_Automovil.mostrarInfo();
-            Mi_Automovil.mostrarVehiculo();
+            Mi_Vehiculo.mostrarInfo();
+            Mi_Vehiculo.mostrarVehiculo();
         }
         else
         {
