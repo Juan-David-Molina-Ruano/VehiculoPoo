@@ -1,6 +1,10 @@
 public class Automovil extends Vehiculo
 {
 
+    public Automovil()
+    {
+        
+    }
     public Automovil(String nombre, String color, Double precio)
     {
         super(nombre,color,precio);
