@@ -5,17 +5,15 @@ public abstract class  Vehiculo {
      // Atributos privados
      private String nombre;
      private String color;
-     private LocalDate añoFabricacion;
      private Double precio;
  
      public Vehiculo() {
      }
  
      // Constructor con parámetros
-     public Vehiculo(String nombre, String color, LocalDate añoFabricacion, Double precio) {
+     public Vehiculo(String nombre, String color, Double precio) {
          this.nombre = nombre;
          this.color = color;
-         this.añoFabricacion = añoFabricacion;
          this.precio = precio;
      }
  
@@ -35,14 +33,6 @@ public abstract class  Vehiculo {
          this.color = color;
      }
  
-     public LocalDate getAñoFabricacion() {
-         return añoFabricacion;
-     }
- 
-     public void setAñoFabricacion(LocalDate añoFabricacion) {
-         this.añoFabricacion = añoFabricacion;
-     }
- 
      public Double getPrecio() {
          return precio;
      }
@@ -57,8 +47,8 @@ public abstract class  Vehiculo {
      // Método para mostrar información del vehículo
      public void mostrarVehiculo() // Overridden
      {
-         System.out.println("Datos Cortos");
-         System.out.print("NOMBRE: " + nombre + " PRECIO: $" + precio);
+         System.out.println("ESTE ES UN VEHICULO");
+         
      }
     
 }
