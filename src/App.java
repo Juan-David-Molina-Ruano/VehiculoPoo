@@ -10,7 +10,7 @@ public class App {
         Vehiculo Mi_Automovil_1 = new Automovil();
 
         System.out.println("   ¿Que Vehiculo Desea Ver?:");
-        System.out.println("1.Automovil   2.Barco   3.Avion");
+        System.out.println("1.Automovil   2.Avion   3.Barco");
         System.out.print("Opcion: ");
         Opcion = Leer.nextInt();
 
@@ -20,6 +20,17 @@ public class App {
 
             Mi_Automovil.mostrarInfo();
             Mi_Automovil.mostrarVehiculo();
+        }
+        else if(Opcion==2)
+        {
+            Vehiculo Mi_Automovil = new Avion("FERRARI", "NEGRO",400.00);
+
+            Mi_Automovil.mostrarInfo();
+            Mi_Automovil.mostrarVehiculo();
+        }
+        else
+        {
+            System.out.println("Opcion No Valida");
         }
         
     }
