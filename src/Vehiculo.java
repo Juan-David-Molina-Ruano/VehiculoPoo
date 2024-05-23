@@ -2,28 +2,63 @@ import java.time.LocalDate;
 
 public abstract class  Vehiculo {
 
-    //Atribustos
-    String Nombre;
-    String Color ;
-    LocalDate Año_Fabricacion;
-    Double Precio ;
-    public Vehiculo() {
-    }
-    public Vehiculo(String nombre, String color, LocalDate año_Fabricacion, Double precio) {
-        Nombre = nombre;
-        Color = color;
-        Año_Fabricacion = año_Fabricacion;
-        Precio = precio;
-    }
-    
-    //metodo
-    public abstract void Mostrar_Info();
-
-    public void Mostrar_Vehiculo() //Overied
-    { 
-        System.out.println(" Datos Cortos");
-        System.out.print("NOMBRE: "+Nombre+" PRECIO: $"+Precio);
-    }
-
+     // Atributos privados
+     private String nombre;
+     private String color;
+     private LocalDate añoFabricacion;
+     private Double precio;
+ 
+     public Vehiculo() {
+     }
+ 
+     // Constructor con parámetros
+     public Vehiculo(String nombre, String color, LocalDate añoFabricacion, Double precio) {
+         this.nombre = nombre;
+         this.color = color;
+         this.añoFabricacion = añoFabricacion;
+         this.precio = precio;
+     }
+ 
+     public String getNombre() {
+         return nombre;
+     }
+ 
+     public void setNombre(String nombre) {
+         this.nombre = nombre;
+     }
+ 
+     public String getColor() {
+         return color;
+     }
+ 
+     public void setColor(String color) {
+         this.color = color;
+     }
+ 
+     public LocalDate getAñoFabricacion() {
+         return añoFabricacion;
+     }
+ 
+     public void setAñoFabricacion(LocalDate añoFabricacion) {
+         this.añoFabricacion = añoFabricacion;
+     }
+ 
+     public Double getPrecio() {
+         return precio;
+     }
+ 
+     public void setPrecio(Double precio) {
+         this.precio = precio;
+     }
+ 
+     // Método abstracto
+     public abstract void mostrarInfo();
+ 
+     // Método para mostrar información del vehículo
+     public void mostrarVehiculo() // Overridden
+     {
+         System.out.println("Datos Cortos");
+         System.out.print("NOMBRE: " + nombre + " PRECIO: $" + precio);
+     }
     
 }
